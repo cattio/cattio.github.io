@@ -1,0 +1,49 @@
+body {
+  background-color:white;
+}
+
+img {
+  text-align:center;
+}
+
+#topmenu {
+  padding: 10px 10px;
+  color:white;
+  background: black;
+  background-size: contain;
+  text-align:center;
+}
+
+#footer {
+  background: black;
+  color:white;
+  font-family: Verdana;
+  padding: 10px 10px;
+  text-align:center;
+}
+#main {
+  background: white;
+  text-align:left;
+  padding: 10px 100px;
+
+}
+
+p {
+  font-family: Verdana;
+}
+
+a {
+  color:white;
+  font-family: 'Great Vibes', Arial;
+  padding: 10px 50px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size:2em;
+  text-align:center;
+  animation:fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from{opacity:0;}
+   to {opacity:1;}
+}
