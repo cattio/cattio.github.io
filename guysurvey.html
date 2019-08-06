@@ -1,0 +1,101 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="draft1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+  <script src="guy.js"></script>
+  <title> men's style quiz </title>
+</head>
+
+<body>
+<div id="wrapper">
+  <script type="text/javascript">
+function toggleContent() {
+  // Get the DOM reference
+  var contentId = document.getElementById("answer");
+  // Toggle
+  contentId.style.display == "block" ? contentId.style.display = "none" :
+contentId.style.display = "block";
+}
+</script>
+  <h2> What's your style? Take this questionnaire to find out!</h2>
+
+  <form
+  action="guysurvey.html"
+  method="post"
+  id="quiz">
+    <!-- Question 1 -->
+    <h2>What gets you the most excited?</h2>
+    <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+    <!-- The value is which answer the choice corresponds to. -->
+    <label><input type="radio" name="q1" value="c1">
+      Relaxing by yourself with music
+    </label><br />
+    <label><input type="radio" name="q1" value="c2">
+      Pulling pranks
+    </label><br />
+    <label><input type="radio" name="q1" value="c3">
+      Sports
+    </label><br />
+    <label><input type="radio" name="q1" value="c4">
+      Taking risks
+    </label><br />
+
+    <!-- Question 2 -->
+    <h2>What does the inside of your closet look like?</h2>
+    <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+    <label><input type="radio" name="q2" value="c1">
+      Somethings are hung up others are thrown around
+    </label><br />
+    <label><input type="radio" name="q2" value="c2">
+      Pretty much a mess but everything has its place in that mess
+    </label><br />
+    <label><input type="radio" name="q2" value="c3">
+      My closets look depends on how I feel
+    </label><br />
+    <label><input type="radio" name="q2" value="c4">
+      My closet is neat, organized and everything has a place
+    </label><br />
+
+    <!-- Question 3 -->
+    <h2>What do you accessorize with the most?</h2>
+    <!-- Choices for the third question -->
+    <label><input type="radio" name="q3" value="c1">
+      A jacket
+    </label><br />
+    <label><input type="radio" name="q3" value="c2">
+      A cool hat
+    </label><br />
+    <label><input type="radio" name="q3" value="c3">
+      Sweatbands
+    </label><br />
+    <label><input type="radio" name="q3" value="c4">
+      A designer watch or belt
+    </label><br />
+
+    <!-- Question 4 -->
+    <h2>What do you do when you encounter a difficult problem?</h2>
+    <!-- Choices for the fourth question -->
+    <label><input type="radio" name="q4" value="c1">
+      Try to find the solution yourself (online, in a book, etc.)
+    </label><br />
+    <label><input type="radio" name="q4" value="c2">
+      Take a break, because it helps you be more creative
+    </label><br />
+    <label><input type="radio" name="q4" value="c3">
+      Ask for help
+    </label><br />
+    <label><input type="radio" name="q4" value="c4">
+      Jump in and try different solutions until one works
+    </label><br />
+
+    <button type="button" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+    <!-- <button onclick="toggleContent()">Results</button> -->
+  <button type="submit" id="reset" onclick="resetAnswer()">Reset</button>
+  </form>
+
+
+  <div id="answer">Your result will show up here!</div>
+  <div id="content" style="display:block;"></div>
+
+</div>
+
+</body>

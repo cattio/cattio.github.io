@@ -81,3 +81,12 @@ width: 50%;
 button, p {
   display: inline;
 }
+
+label{
+  font-family: Verdana;
+
+}
+
+#answer{
+    font-family: Verdana;
+}
