@@ -15,8 +15,58 @@
     <a href="https://cattio.github.io/size1">clothing size calculator</a>
     <a href="https://cattio.github.io/stores1">store options</a>
   </div>
-  <div id="main">
-  <p> size calculator </p>
+<div class="row" id="main">
+    <img src="figure.png"> <img src="manss.png">
+    <p>To use the size calculators, you should take your measurements
+      in whole inches using a flexible tape measure.
+      <br> a: bust/chest measurement is found by measuring
+      over the fullest part of your chest while wearing a bra that fits
+      <br> b: under bust measurement is taken directly under the bust
+      <br> c: waist measurement is taken around the smallest part of your waist
+  <div class="column">
+    <!-- Womens shirt size calculator -->
+      <h2> Women's shirt size calculator </h2>
+      <p>Please enter your bust/chest measurement to see your shirt size.</p>
+      <input id="wchest" placeholder="chest/bust measurement">
+      <button type="button" onclick="wchest_function()">Submit</button>
+      <p id="wchest_size">Your shirt size is ______ </p>
+
+    <!-- Womens pant size calculator -->
+      <h2> Women's pant size calculator</h2>
+      <p>Please enter your waist measurement to see your pant size.</p>
+      <input id="wwaist" placeholder="waist measurement">
+      <button type="button" onclick="wwaist_function()">Submit</button>
+      <p id="wwaist_size">Your pant size is ______ </p>
+
+      <!-- Womens bra size calculator -->
+        <h2> Women's bra size calculator </h2>
+        <p>Please enter your bust and under bust measurements to see <br>
+        your bra size.</p>
+        <input id="wbust" placeholder="bust measurement">
+        <input id="wunder_bust" placeholder="under bust measurement">
+        <button type="button" onclick="wbra_function()">Submit</button>
+        <p id="wbra_size">Your bra size is ______ </p>
+
+  </div>
+
+  <div class="column">
+    <!-- Mens shirt size calculator -->
+    <h2> Mens's shirt size calculator </h2>
+    <p>Please enter your chest measurement to see your shirt size.</p>
+    <input id="mchest" placeholder="chest measurement">
+    <button type="button" onclick="mchest_function()">Submit</button>
+    <p id="mchest_size" >Your shirt size is ______ </p>
+
+    <!-- Mens pant size calculator -->
+    <h2> Mens's pant size calculator </h2>
+    <p>Please enter your waist measurement to see your pant size.
+    Mens pant sizes are usually just the waist measurement followed
+    by the inside leg length, so a calculator isn't as neccesary.</p>
+    <input id="mwaist" placeholder="waist measurement">
+    <button type="button" onclick="mwaist_function()">Submit</button>
+    <p id="mwaist_size" class="inline" >Your pant size is ______ </p>
+    <p> Sizing information and pictures are from the H&M website sizeguide. </p>
+  </div>
 
   </div>
   <div id="footer">
